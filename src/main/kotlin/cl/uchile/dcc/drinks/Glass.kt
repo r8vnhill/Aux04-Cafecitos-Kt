@@ -12,13 +12,16 @@ import cl.uchile.dcc.ingredients.Ingredient
  * @param _ingredients The [Ingredient]s in the glass.
  * @constructor Creates a new glass with [Ingredient]s.
  */
-class Glass(private var _ingredients: List<Ingredient>) {
+class Glass(private var _ingredients: MutableList<Ingredient> = mutableListOf()) {
     private val ingredients: List<Ingredient>
         get() = _ingredients.toList()
-    private val totalContent = 0
+    val totalContent: Int
+        get() = ingredients.sumOf { it.content }
 
     /** Empties the contents of the glass. */
-    fun emptyContent() {
-        // Do something uwu
-    }
+    fun emptyContent() = _ingredients.clear()
+
+    fun isEmpty() = _ingredients.isEmpty()
+
+    fun add(ingredient: Ingredient) = _ingredients.add(ingredient)
 }

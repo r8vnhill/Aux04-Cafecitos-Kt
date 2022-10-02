@@ -6,15 +6,17 @@ package cl.uchile.dcc.ingredients
  */
 
 /** An interface to represent ingredients.  */
-interface Ingredient
+interface Ingredient {
+    val content: Int
+}
 
 /**
  * An abstract class to hold common functionality for [Ingredient]s.
  *
- *  @property content   The content in milliliters.
- *  @property ingredientName   The name of the ingredient.
+ *  @property content           The content in milliliters.
+ *  @property ingredientName    The name of the ingredient.
  */
-abstract class AbstractIngredient(protected var content: Int, private val ingredientName: String) :
+abstract class AbstractIngredient(override val content: Int, private val ingredientName: String) :
         Ingredient {
     override fun toString() = "$ingredientName{content=$content}"
 }
