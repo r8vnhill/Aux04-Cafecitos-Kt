@@ -5,6 +5,7 @@ import cl.uchile.dcc.ingredients.Ingredient
 import cl.uchile.dcc.ingredients.Milk
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
+import io.kotest.matchers.shouldNotBe
 
 
 class GlassTest : FunSpec({
@@ -20,6 +21,13 @@ class GlassTest : FunSpec({
 
     test("The total content of a glass should be correct") {
         glass1.totalContent shouldBe 0
+        glass2.totalContent shouldNotBe 0
         glass2.totalContent shouldBe 240
+    }
+
+    test("A glass can be emptied") {
+        glass2.totalContent shouldNotBe 0
+        glass2.emptyContent()
+        glass2.totalContent shouldBe 0
     }
 })
