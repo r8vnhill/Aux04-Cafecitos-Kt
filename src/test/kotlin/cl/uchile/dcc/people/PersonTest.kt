@@ -9,17 +9,19 @@ import io.kotest.matchers.types.haveSameHashCodeAs
 import io.kotest.matchers.types.shouldBeSameInstanceAs
 import io.kotest.matchers.types.shouldNotBeSameInstanceAs
 
-class PersonTest : FunSpec({
-    lateinit var person1: Person
-    lateinit var person2: Person
-    lateinit var person3: Person
+lateinit var person1: Person
+lateinit var person2: Person
+lateinit var person3: Person
 
-    beforeEach {
-        person1 = Person("Mario")
-        person2 = Person("Mario")
-        person3 = Person("María")
-    }
 
+fun setUpPeople() {
+    person1 = Person("Mario")
+    person2 = Person("Mario")
+    person3 = Person("María")
+}
+
+open class PersonTest : FunSpec({
+    beforeEach { setUpPeople() }
     test("Person should be equal to itself") {
         person1 shouldBeSameInstanceAs person1
         person1 shouldBe person1
