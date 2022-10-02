@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5055250a-4b35-4646-b7d5-f4043a6ba19a" name="Changes" comment="FEAT implementate AbstractIngredient">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="5055250a-4b35-4646-b7d5-f4043a6ba19a" name="Changes" comment="FEAT Implement functionalities">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Coffee.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Coffee.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Ingredient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Ingredient.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Milk.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Milk.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Syrup.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Syrup.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/people/Barista.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/people/Barista.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/people/Person.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/people/Person.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,13 +26,14 @@
         <option value="CC4.0 LICENSE" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Kotest Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="00-init" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,6 +48,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="01-tests-constructor-equals-hash" />
+                    <option name="lastUsedInstant" value="1664730971" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="00-init" />
                     <option name="lastUsedInstant" value="1664656928" />
@@ -85,19 +83,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Kotlin&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "Kotest",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Kotest": "io.kotest.core.spec.style.FunSpec",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Kotlin"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="io.kotest.core.spec.style.FunSpec" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="cl.uchile.dcc.people" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="PersonTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cl.uchile.dcc.people.PersonTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.PersonTest (1)" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -107,7 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664655511478</updated>
       <workItem from="1664655516108" duration="8139000" />
-      <workItem from="1664729061625" duration="1064000" />
+      <workItem from="1664729061625" duration="2099000" />
     </task>
     <task id="LOCAL-00001" summary="REPO Create base files">
       <created>1664656509744</created>
@@ -130,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664664736002</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="FEAT Implement functionalities">
+      <created>1664730745567</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664730745567</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +197,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="REPO Create base files" />
     <MESSAGE value="FEAT implementate AbstractIngredient" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEAT implementate AbstractIngredient" />
+    <MESSAGE value="FEAT Implement functionalities" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEAT Implement functionalities" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
