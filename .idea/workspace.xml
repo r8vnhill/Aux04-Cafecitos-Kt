@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5055250a-4b35-4646-b7d5-f4043a6ba19a" name="Changes" comment="REPO Create base files">
+    <list default="true" id="5055250a-4b35-4646-b7d5-f4043a6ba19a" name="Changes" comment="FEAT implementate AbstractIngredient">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/drinks/Glass.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/drinks/Glass.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Coffee.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Coffee.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Ingredient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Ingredient.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Milk.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Milk.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Syrup.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/ingredients/Syrup.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/people/Barista.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/people/Barista.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/people/Person.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cl/uchile/dcc/people/Person.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +46,7 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -79,19 +85,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Kotlin"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Kotlin&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -100,7 +106,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664655511478</updated>
-      <workItem from="1664655516108" duration="2966000" />
+      <workItem from="1664655516108" duration="8139000" />
+      <workItem from="1664729061625" duration="1064000" />
     </task>
     <task id="LOCAL-00001" summary="REPO Create base files">
       <created>1664656509744</created>
@@ -116,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664656556068</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="FEAT implementate AbstractIngredient">
+      <created>1664664736002</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664664736002</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +151,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="REPO Create base files" />
-    <option name="LAST_COMMIT_MESSAGE" value="REPO Create base files" />
+    <MESSAGE value="FEAT implementate AbstractIngredient" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEAT implementate AbstractIngredient" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

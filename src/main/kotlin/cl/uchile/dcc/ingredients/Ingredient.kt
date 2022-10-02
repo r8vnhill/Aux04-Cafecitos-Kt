@@ -14,7 +14,7 @@ interface Ingredient
  *  @property content   The content in milliliters.
  *  @property ingredientName   The name of the ingredient.
  */
-abstract class AbstractIngredient(private var content: Int, private val ingredientName: String) :
+abstract class AbstractIngredient(protected var content: Int, private val ingredientName: String) :
         Ingredient {
     override fun toString() = "$ingredientName{content=$content}"
 }
